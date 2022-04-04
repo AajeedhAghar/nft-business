@@ -24,6 +24,8 @@ Route::get('/invsestors', function () {
 
 Route::get('/list', function () {
     return view('listing');
+});
+
 Route::get('/franchise', function () {
     return view('franchise');
 });
