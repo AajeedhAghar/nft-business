@@ -13,12 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/invsestors', function () {
     return view('investors');
 });
 
 Route::get('/list', function () {
     return view('listing');
+Route::get('/franchise', function () {
+    return view('franchise');
+});
+
+Route::get('/business', function () {
+    return view('business');
 });
 
 

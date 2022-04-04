@@ -36,8 +36,8 @@ h1, h2, h3, h4, h5, h6 {
 # Main
 --------------------------------------------------------------*/
 #main {
-  margin-top: 60px;
-  padding: 20px 30px;
+  margin-top: 50px;
+  padding: 30px 200px;
   transition: all 0.3s;
 }
 @media (max-width: 1199px) {
@@ -420,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header Nav
 --------------------------------------------------------------*/
-.header-nav ul {
+/* .header-nav ul {
   list-style: none;
 }
 .header-nav > ul {
@@ -521,12 +521,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-nav .profile .dropdown-item:hover {
   background-color: #f6f9ff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Sidebar
 --------------------------------------------------------------*/
-.sidebar {
+/* .sidebar {
   position: fixed;
   top: 60px;
   left: 0;
@@ -657,7 +657,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .sidebar-nav .nav-content a.active i {
   background-color: #4154f1;
-}
+} */
 
 /*--------------------------------------------------------------
 # Dashboard
