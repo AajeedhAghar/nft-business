@@ -39,7 +39,108 @@
 </head>
 
 <body>
-  
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+<div class="d-flex align-items-center justify-content-between">
+  <a href="index.html" class="logo d-flex align-items-center">
+    <span class="d-none d-lg-block">NFT Dubai</span>
+  </a>
+</div><!-- End Logo -->
+
+<div class="search-bar">
+  <form class="search-form d-flex align-items-center" method="POST" action="#">
+    <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+    <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+  </form>
+</div><!-- End Search Bar -->
+
+<nav class="header-nav ms-auto">
+
+        <a class="nav-link nav-profile d-flex align-items-center " href="#" data-bs-toggle="dropdown">
+            <span class="d-none d-md-block dropdown-toggle ps-2">AbuBakr</span>
+        </a><!-- End Profile Iamge Icon -->
+
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+                <h6>AbuBakr Ali</h6>
+                <span>abubakr.ali5001@gmail.com</span>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+
+            <li>
+                <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                    <i class="bi bi-person"></i>
+                    <span>My Profile</span>
+                </a>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+
+            <li>
+                <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                    <i class=" ri-bill-line"></i>
+                    <span>Invoices</span>
+                </a>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+
+            <li>
+                <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                    <i class=" ri-bookmark-line"></i>
+                    <span>Bookmark</span>
+                </a>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                    <i class=" ri-inbox-line"></i>
+                    <span>Inbox</span>
+                </a>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                    <i class=" ri-notification-2-fill"></i>
+                    <span>Notifications</span>
+                </a>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                    <i class=" ri-settings-3-line"></i>
+                    <span>Setting</span>
+                </a>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                    <i class="bi power"></i>
+                    <span>Sign Out</span>
+                </a>
+            </li>
+
+        </ul><!-- End Profile Dropdown Items -->
+
+</nav><!-- End Icons Navigation -->
+
+</header><!-- End Header -->
+
+<div class="filter"> <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter" aria-expanded="false" aria-controls="mobile-filter">Filters<span class="fa fa-filter pl-1"></span></button>
+</div>
   <main id="main" class="main">
 
     <div class="pagetitle">
@@ -327,6 +428,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
+
   <footer id="footer" class="footer">
     <div class="copyright">
       &copy; Copyright <strong><span>NFT Dubai</span></strong>. All Rights Reserved
@@ -336,11 +438,10 @@
       <!-- You can delete the links only if you purchased the pro version. -->
       <!-- Licensing information: https://bootstrapmade.com/license/ -->
       <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by 
+      Designed by <a href="https://bootstrapmade.com/">NFT Dubai</a>
     </div>
   </footer><!-- End Footer -->
 
- 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
  <!-- Vendor JS Files -->
