@@ -24,6 +24,7 @@ Route::get('/invsestors', function () {
 
 Route::get('/list', function () {
     return view('listing');
+});
 Route::get('/franchise', function () {
     return view('franchise');
 });
@@ -37,5 +38,3 @@ Route::resource('busninesses', BusinessController::class);
 Route::resource('franchises', FranchiseController::class);
 Route::resource('investors', InvestorController::class);
 Route::resource('formats', FormatController::class);
-
-   
