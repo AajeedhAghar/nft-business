@@ -22,6 +22,8 @@ Route::get('/invsestors', function () {
     return view('investors');
 });
 
+Route::get('/list', function () {
+    return view('listing');
 Route::get('/franchise', function () {
     return view('franchise');
 });
