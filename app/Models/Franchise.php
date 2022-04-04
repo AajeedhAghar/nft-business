@@ -9,6 +9,8 @@ class Franchise extends Model
 {
     use HasFactory;
 
+
+    protected $guarded = [];
     public function User()
     {
         return $this->belongsTo('App\User');

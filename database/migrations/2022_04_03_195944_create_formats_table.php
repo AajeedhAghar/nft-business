@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('formats', function (Blueprint $table) {
 
-                $table->id();
+            $table->bigIncrements('id');
                 $table->string('name')->nullable();
                 $table->decimal('min_required_space')->nullable();
                 $table->decimal('max_required_space')->nullable();

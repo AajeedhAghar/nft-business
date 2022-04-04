@@ -53,20 +53,31 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Confidential Information</h5>
-              <form class="row g-3">
+              <form method="POST" action="{{ route('franchise.store')}}">
+              
+              @csrf
+
+          <div class="form-group">
                 <div class="col-md-6">
                   <label for="name" class="form-label">Authorized Person Name</label>
                   <input type="text" class="form-control" id="name" name="name">
                 </div>
+                <input hidden="hidden"   name="user_id" id="user_id" value="1" type="text">
 
+
+
+
+        
+ 
+ 
                 <div class="col-md-6">
                     <label for="email" class="form-label">Enter official email for quick verification</label>
                     <input type="text" class="form-control" id="email" name="email">
                   </div>
 
                 <div class="col-md-6">
-                    <label for="phone_number " class="form-label">Mobile Number</label>
-                    <input type="number" class="form-control" id="phone_number " name="phone_number "> 
+                    <label for="phone " class="form-label">Mobile Number</label>
+                    <input type="number" class="form-control" id="phone " name="phone "> 
                 </div>
                 <div class="col-md-6">
                   <label for="designation" class="form-label">Your Designation</label>
@@ -74,7 +85,6 @@
                 </div>
             
                 
-              </form>
             </div>
           </div>
 
@@ -83,7 +93,7 @@
               <h5 class="card-title">Brand Details</h5>
 
             
-              <form class="row g-3">
+              <div class="row g-3">
                 <div class="col-md-12">
                   <label for="brand_name " class="form-label">Brand Name</label>
                   <input type="text" class="form-control" id="brand_name" name="brand_name">
@@ -194,7 +204,7 @@
                   <h5 class="card-title">Format 1</h5>
                   <div class="col-md-12">
                     <label for="name " class="form-label">Format Name</label>
-                    <input type="number" class="form-control" id="name " name="name "> 
+                    <input type="name" class="form-control" id="format_name " name="format_name "> 
                 </div>
 
             
@@ -239,7 +249,7 @@
 
                     <div class="input-group col-md-6">           
                         <span class="input-group-text">AED</span>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" name="barand_fee">
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" name="brand_fee">
                         <span class="input-group-text">.00</span>
                       </div>
                 </div>
@@ -264,7 +274,7 @@
                 </div>
                 <div class="col-sm-6">
                     <label for="profit_margin   " class="form-label">Attach Proof of Business</label>
-                    <input class="form-control" type="file" id="proof" name="prrof">
+                    <input class="form-control" type="file" id="proof" name="proof">
                 </div>
                 
                 <div class="col-sm-10 offset-sm-1">
@@ -336,7 +346,7 @@
                       <label class="form-check-label" for="gridCheck1">
                         I accept 1% finder's fee (payable post transaction) and other terms of engagement <a href="">Know More</a> 
                       </label>
-                  </div>
+                  </div> -->
 
                 <div class="text-right">
                   <button type="submit" class="btn btn-primary">Submit</button>
