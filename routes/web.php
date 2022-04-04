@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InvestorController;
+use App\Http\Controllers\BusinessController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,10 +33,6 @@ Route::post('/post_invsestors', [InvestorController::class, 'create'])->name('cr
 Route::get('/list', function () {
     return view('listing');
 });
-<<<<<<< HEAD
-
-=======
->>>>>>> 2bd7ce7b303f3a724b95f1539575cbdb1a46bdd0
 Route::get('/franchise', function () {
     return view('franchise');
 });
@@ -43,6 +40,7 @@ Route::get('/franchise', function () {
 Route::get('/business', function () {
     return view('business');
 });
+Route::post('/post_business', [BusinessController::class, 'create'])->name('create.business');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

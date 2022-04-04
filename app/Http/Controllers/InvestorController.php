@@ -24,11 +24,6 @@ class InvestorController extends Controller
      */
     public function create(Request $request)
     {
-        // echo "<pre>";
-        // print_r(auth::user()->id);
-        // print_r($request->all());
-
-        // die("111111111111111111111111");
         // $this->validate($request, [
         //     'name' => 'required',
         //     'email' => 'required|email',
@@ -45,10 +40,6 @@ class InvestorController extends Controller
 
         $request->request->set('user_id', auth::user()->id);
 
-        // print_r($request->all());
-        // print_r($request->post('interests'));
-
-        // die("111111111111111111111111");
         Investor::create($request->all());
 
         // 

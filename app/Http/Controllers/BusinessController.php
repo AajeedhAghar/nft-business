@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Business;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BusinessController extends Controller
 {
@@ -19,9 +20,38 @@ class BusinessController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        return view('businesses.create');
+
+        // $this->validate($request, [
+        //     'name' => 'required',
+        //     'email' => 'required|email',
+        //     'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
+        //     'subject'=>'required',
+        //     'message' => 'required'
+        //  ]);
+        // //  Store data in database
+
+        // echo "<pre>";
+        // print_r($request->all());
+        // die();
+
+        $plan = implode(',',$request->post('plan'));
+        $request->request->set('plan', $plan);
+
+        $receiving_quotations = ($request->post('receiving_quotations') && $request->post('receiving_quotations')!='') ? '1' : '0';
+        $request->request->set('receiving_quotations', $receiving_quotations);
+
+        // $current_plan_title = implode(',',$request->post('current_plan_title'));
+        // $request->request->set('current_plan_title', $current_plan_title);
+
+        $request->request->set('user_id', auth::user()->id);
+
+        Business::create($request->all());
+
+        // 
+        return back()->with('success', 'We have received your message and would like to thank you for writing to us.');
+
     }
 
     /**
