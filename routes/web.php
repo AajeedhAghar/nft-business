@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\InvestorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,10 +23,19 @@ Route::get('/invsestors', function () {
     return view('investors');
 });
 
+Route::post('/post_invsestors', [InvestorController::class, 'create'])->name('create.investor');
+// Route::post('/post_invsestors', function () {
+
+//     // return view('investors');
+// });
+
 Route::get('/list', function () {
     return view('listing');
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2bd7ce7b303f3a724b95f1539575cbdb1a46bdd0
 Route::get('/franchise', function () {
     return view('franchise');
 });
