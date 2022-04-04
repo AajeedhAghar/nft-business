@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('investors');
 });
 
+Route::get('/list', function () {
+    return view('listing');
+});
+
 
 Route::resource('busninesses', BusinessController::class);
 Route::resource('franchises', FranchiseController::class);
