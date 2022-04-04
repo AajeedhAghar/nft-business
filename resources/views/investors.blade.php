@@ -44,14 +44,14 @@
     <section class="section">
       <div class="row">
         <div class="col-lg-12">
-
+          <form class="row g-3" method="post" action="{{ route('create.investor') }}">
+                  @csrf
             <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Investor Registeration</h5>
                   <p style="font-size: small;">Please enter your own details here. Information entered here is not publicly displayed.</p>
 
                   <!-- Multi Columns Form -->
-                  <form class="row g-3">
                     <div class="col-md-12">
                       <label for="inputName5" class="form-label">Your Full Name</label>
                       <input type="text" class="form-control" placeholder="Enter your full name" name="name" id="inputName5">
@@ -66,10 +66,9 @@
                     </div>
                     <div class="col-md-9">
                         <label for="inputPassword5" class="form-label">Phone Number</label>
-                        <input type="number" name="phone_number" placeholder="Enter your phone number" class="form-control" id="inputPassword5">
+                        <input type="number" name="phone" placeholder="Enter your phone number" class="form-control" id="inputPassword5">
                     </div>
   
-                  </form><!-- End Multi Columns Form -->
     
                 </div>
               </div>
@@ -79,13 +78,14 @@
                   <h5 class="card-title">Your Requirement</h5>
                         <p style="font-size: small;">Information entered here will be publicly displayed to match you with the right set of businesses. Fields specifically marked as 'Private' will not be publicly displayed.</p>
                   <!-- Multi Columns Form -->
-                  <form class="row g-3">
+                  <!-- <form> -->
+                  
                     <div class="col-md-12">
                       <label for="inputName5" class="form-label">Your Intersted</label>
                       <div class="row mb-3">
                         <div class="col-sm-10 offset-sm-2">
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <input class="form-check-input" name="interests[]" type="checkbox" id="gridCheck1">
                             <label class="form-check-label" for="gridCheck1">
                                 Acquiring / Buying a Business
                             </label>
@@ -95,7 +95,7 @@
                       <div class="row mb-3">
                         <div class="col-sm-10 offset-sm-2">
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <input class="form-check-input" name="interests[]" type="checkbox" id="gridCheck1">
                             <label class="form-check-label" for="gridCheck1">
                                 Investing in a Business
                             </label>
@@ -105,7 +105,7 @@
                       <div class="row mb-3">
                         <div class="col-sm-10 offset-sm-2">
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <input class="form-check-input" name="interests[]" type="checkbox" id="gridCheck1">
                             <label class="form-check-label" for="gridCheck1">
                                 Lending to a Business
                             </label>
@@ -115,7 +115,7 @@
                       <div class="row mb-3">
                         <div class="col-sm-10 offset-sm-2">
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <input class="form-check-input" name="interests[]" type="checkbox" id="gridCheck1">
                             <label class="form-check-label" for="gridCheck1">
                                 Buying Property / Plant / Machinery
                             </label>
@@ -125,7 +125,7 @@
                       <div class="row mb-3">
                         <div class="col-sm-10 offset-sm-2">
                           <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <input class="form-check-input" name="interests[]" type="checkbox" id="gridCheck1">
                             <label class="form-check-label" for="gridCheck1">
                                 Taking up a Franchise / Distributorship / Sales Agency
                             </label>
@@ -143,7 +143,7 @@
                       </div>
                       <div class="col-g-3">
                         <label for="inputState" class="form-label">Select industries you are interested in</label>
-                        <select id="inputState" class="form-select" name="Industries">
+                        <select id="inputState" class="form-select" name="industries">
                           <option selected>Choose...</option>
                           <option>Energy</option>
                           <option>Industerial</option>
@@ -152,7 +152,7 @@
                       </div>
                       <div class="col-g-3">
                         <label for="inputState" class="form-label">Select locations you are interested in</label>
-                        <select id="inputState" class="form-select" name="interested_location">
+                        <select id="inputState" class="form-select" name="interested_locations">
                           <option selected>Choose...</option>
                           <option>UAE</option>
                           <option>KSA</option>
@@ -164,9 +164,9 @@
                       <label for="inputEmail5" class="form-label">Provide your investment range</label>
                       <div class="input-group mb-3">
                         <span class="input-group-text" >AED</span>
-                        <input type="number" class="form-control" placeholder="Min Investment" name="Investment_min">
+                        <input type="number" class="form-control" placeholder="Min Investment" name="investment_min">
                         <span class="input-group-text">To</span>
-                        <input type="number" class="form-control" placeholder="Max Investment" name="Investment_max">
+                        <input type="number" class="form-control" placeholder="Max Investment" name="investment_max">
                       </div>
                       
                     <div class="col-g-3">
@@ -206,13 +206,13 @@
                       <div class="row mb-3">
                         <label for="inputPassword" class="col-sm-2 col-form-label">Factors you look for in a business</label>
                         <div class="col-sm-10">
-                          <textarea class="form-control" name="intersting_factors" style="height: 100px"></textarea>
+                          <textarea class="form-control" name="factors" style="height: 100px"></textarea>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <label for="inputPassword" class="col-sm-2 col-form-label">About yourself</label>
                         <div class="col-sm-10">
-                          <textarea class="form-control" name="about_you" style="height: 100px"></textarea>
+                          <textarea class="form-control" name="company_description" style="height: 100px"></textarea>
                         </div>
                       </div>
                       <div class="row mb-3">
@@ -229,7 +229,7 @@
                       </div>
                       <div class="col-sm-10 offset-sm-1">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <input class="form-check-input" name="current_plan_title[]" type="checkbox" id="gridCheck1">
                           <label class="form-check-label" for="gridCheck1">
                               Active Plan  <a href="">Know More</a> 
                           </label>
@@ -237,7 +237,7 @@
                       </div>
                       <div class="col-sm-10 offset-sm-1">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <input class="form-check-input" name="current_plan_title[]" type="checkbox" id="gridCheck1">
                           <label class="form-check-label" for="gridCheck1">
                             Premium Plan <a href="">Know More</a> 
                             <br>
@@ -255,7 +255,7 @@
                       </div>
                       <div class="col-sm-10 offset-sm-1">
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <input class="form-check-input" name="current_plan_title[]" type="checkbox" id="gridCheck1">
                           <label class="form-check-label" for="gridCheck1">
                             Yearly Plan  <a href="">Know More</a> 
                           </label>
@@ -275,11 +275,11 @@
                           <button type="submit" class="btn btn-primary">Submit</button>
                         
                       </div>
-                  </form><!-- End Multi Columns Form -->
+                  
     
                 </div>
               </div>
-
+          </form><!-- End Multi Columns Form -->
         </div>
       </div>
     </section>

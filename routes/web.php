@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\InvestorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,12 @@ Route::get('/invsestors', function () {
     return view('investors');
 });
 
+Route::post('/post_invsestors', [InvestorController::class, 'create'])->name('create.investor');
+// Route::post('/post_invsestors', function () {
+
+//     // return view('investors');
+// });
+
 Route::get('/list', function () {
     return view('listing');
 });
@@ -32,6 +39,12 @@ Route::get('/franchise', function () {
 Route::get('/business', function () {
     return view('business');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
 
 
 Route::resource('busninesses', BusinessController::class);

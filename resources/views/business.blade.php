@@ -81,36 +81,88 @@
             <div class="card-body">
               <h5 class="card-title">Business Information</h5>
               <form class="row g-3">
-                <div class="col-md-12">
-                  <label for="brand_name " class="form-label">You are a(n)</label>
-                  <input type="text" class="form-control" id="brand_name" name="brand_name">
+
+                <div class="row mb-3">
+                  <label class="col-sm-12 col-form-label">You are a(n)</label>
+                  <div class="col-sm-12">
+                    <select class="form-select" aria-label="Default select example">
+                      <option value="1">Business Owner/ Director</option>
+                      <option value="2">Management Member</option>
+                      <option value="3">Advisor/ Business Broker</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label class="col-sm-12 col-form-label">You are interested in</label>
+                  <div class="col-sm-12">
+                    <select class="form-select" aria-label="Default select example">
+                      <option value="1">Full sale of business</option>
+                      <option value="2">Partial stake sale of business/invest</option>
+                      <option value="3">Loan for business</option>
+                      <option value="3">Selling or Leasing out Business Assets</option>
+                    </select>
+                  </div>
+                </div>
+
+
+                <div class="col-md-4">
+                  <label for="industry " class="form-label">When was the business established?</label>
+                  <input type="date" class="form-control" id="industry " name="industry "> 
+              </div>
+
+            
+                <div class="row mb-3">
+                  <label class="col-sm-12 col-form-label">Select business' industry</label>
+                  <div class="col-sm-12">
+                    <select class="form-select" aria-label="Default select example">
+                      <option value="1">Energey</option>
+                      <option value="2">Industrial</option>
+                      <option value="3">Finance</option>
+                      <option value="3">Healthcare</option>
+                      <option value="1">Technology</option>
+                      <option value="2">Building, Construction Maintenance</option>
+                      <option value="3">Food & Beverage</option>
+                      <option value="3">Retail Shops</option>
+                      <option value="1">Education </option>
+                      <option value="2">Logistics</option>
+                      <option value="3">Media </option>
+                      <option value="3">Travel & Leisure</option>
+                      <option value="1">Business Services </option>
+                      <option value="2">Electronic Equipment</option>
+                      <option value="3">Coal </option>
+                      <option value="3">Integrated oil and Gas</option>
+                    </select>
+                  </div>
                 </div>
 
                 <div class="col-md-12">
-                    <label for="website" class="form-label">You are interested in</label>
-                    <input type="text" class="form-control" id="website" name="website">
-                  </div>
-                <div class="col-md-12">
-                    <label for="industry " class="form-label">When was the business established?</label>
-                    <input type="date" class="form-control" id="industry " name="industry "> 
-                </div>
-                <div class="col-md-12">
-                  <label for="industry " class="form-label">When was the business established?</label>
+                  <label for="industry " class="form-label">Where is the business located / headquartered?</label>
                   <input type="text" class="form-control" id="industry " name="industry "> 
               </div>
 
-              <div class="col-md-12">
-                <label for="industry " class="form-label">Where is the business located / headquartered?</label>
-                <input type="text" class="form-control" id="industry " name="industry "> 
-            </div>
+
             <div class="col-md-12">
-              <label for="industry " class="form-label">Select business legal entity type</label>
-              <input type="text" class="form-control" id="industry " name="industry "> 
+              <label for="industry " class="form-label">How many permanent employees does the business have?</label>
+              <input type="number" class="form-control" id="industry " name="industry "> 
           </div>
 
+          <div class="row mb-3">
+            <label class="col-sm-12 col-form-label">Select business legal entity type</label>
+            <div class="col-sm-12">
+              <select class="form-select" aria-label="Default select example">
+                <option value="1">Sole Proprirtorship/ Sole Trader</option>
+                <option value="2">General Partnership</option>
+                <option value="3">Limited Liability Partnership(LLP)</option>
+                <option value="3">Limited Liability Company(LLC)</option>
+                <option value="1">Private Limited Company</option>
+                <option value="2">Public Limited Company</option>
+                <option value="3">S Corporation </option>
+                <option value="3">C Corporation </option>
+                <option value="1">Other</option>
+            </div>
+          </div>
             
-            
-
                 <div class="col-md-12">
                   <label for="business_description " class="form-label">Describe the business in a single line</label>
                   <textarea class="form-control" name="business_description "></textarea>
@@ -130,126 +182,75 @@
                     <textarea class="form-control" placeholder="" id="all_products_services" style="height: 100px;"></textarea>
                   </div>
 
-
-                  <div class="col-md-4">
-                    <label for="brand_start_year" class="form-label">When did your brand start operations?</label>
-                    <input type="date" class="form-control" name="brand_start_year">
-                  </div>
-
-                  <div class="col-md-4">
-                    <label for="brand_location" class="form-label">Where is your brand's headquarters located?</label>
-                    <input type="text" class="form-control" id="brand_location  " name="brand_location ">
-                  </div>
-
-                  <div class="col-md-4">
-                    <label for="brand_start_year " class="form-label">When did your brand start operations?</label>
-                    <input type="text" class="form-control" id="brand_start_year " name="brand_start_year">
-                  </div>
-
                   <div class="col-md-6">
-                    <label for="existing_outlets_count" class="form-label">How many outlets do you already have globally?</label>
-                    <input type="number" class="form-control" id="existing_outlets_count" name="existing_outlets_count" placeholder="Include company operated outlets as well">
-                  </div>
+                    <label for="brand_fee" class="form-label">At present, what is your average monthly sales?</label>
 
-                  <div class="col-md-12">
-                    <label for="expectation " class="form-label">What is your expectation from the user who takes up this opportunity</label>
-                    <textarea class="form-control" placeholder="Roles and Responsibilities" id="expectation " style="height: 100px;" name="expectation "></textarea>
-                  </div>
+                    <div class="input-group col-md-6">           
+                        <span class="input-group-text">AED</span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" name="barand_fee">
+                        <span class="input-group-text">.00</span>
+                      </div>
+                    </div>
 
-                  <div class="col-md-12">
-                    <label for="expectation " class="form-label">What kind of support can the franchisee expect from you?</label>
-                    <textarea class="form-control"  id="support " style="height: 100px;" name="support "></textarea>
-                  </div>
-                  <div class="col-md-12">
-                    <label for="procedure " class="form-label">What is the procedure to obtain your Franchise?</label>
-                    <textarea class="form-control" placeholder="Roles and Responsibilities" id="procedure " style="height: 100px;" name="procedure "></textarea>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="expand_location " class="form-label">Mention cities/states/countries you want to expand in</label>
-                    <input type="text" class="form-control" id="expand_location " name="expand_location">
-                  </div>
+                    <div class="col-md-6">
+                      <label for="brand_fee" class="form-label">What was your latest reported yearly sales?</label>
+  
+                      <div class="input-group col-md-6">           
+                          <span class="input-group-text">AED</span>
+                          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" name="barand_fee">
+                          <span class="input-group-text">.00</span>
+                        </div>
+                      </div>
 
-                  <div class="col-md-6">
-                    <label for="brand_start_year " class="form-label">How many Franchise Formats do you provide?</label>
-                    <input type="text" class="form-control" id="brand_start_year " name="brand_start_year">
-                  </div>
+                      <div class="col-md-12">
+                        <label for="industry " class="form-label">What is the EBITDA / Operating Profit Margin Percentage?</label>
+                        <input type="number" class="form-control" id="industry " name="industry "> 
+                    </div>
+
+                    <div class="col-md-12">
+                      <label for="all_products_services" class="form-label">List all tangible and intangible assets the business owns</label>
+                      <textarea class="form-control" placeholder="" id="all_products_services" style="height: 100px;"></textarea>
+                    </div>
                   
-                  <hr/>
 
-                  <h5 class="card-title">Format 1</h5>
-                  <div class="col-md-12">
-                    <label for="name " class="form-label">Format Name</label>
-                    <input type="number" class="form-control" id="name " name="name "> 
-                </div>
+                    <div class="col-md-6">
+                      <label for="brand_fee" class="form-label">What is the value of physical assets owned by the business?</label>
+  
+                      <div class="input-group col-md-6">           
+                          <span class="input-group-text">AED</span>
+                          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" name="barand_fee">
+                          <span class="input-group-text">.00</span>
+                        </div>
+                      </div>
+                    </div>
 
+                <hr>
                 
-                <label for="inputEmail5" class="form-label">Space Required</label>
-                <div class="input-group mb-3">
-                  <input type="number" class="form-control" placeholder="Min Squre ft" name="min_required_space ">
-                  <span class="input-group-text">To</span>
-                  <input type="number" class="form-control" placeholder="Max Squre ft" name="max_required_space ">
-                </div>
-
-                <label for="inputEmail5" class="form-label">Total Investment Needed</label>
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" >AED</span>
-                        <input type="number" class="form-control" placeholder="Min Investment" name="min_investment">
-                        <span class="input-group-text">To</span>
-                        <input type="number" class="form-control" placeholder="Max Investment" name="max_investment">
-                      </div>
-
-                <div class="col-md-6">
-                    <label for="brand_fee" class="form-label">What is the brand fee included in this investment?</label>
-
-                    <div class="input-group col-md-6">           
-                        <span class="input-group-text">AED</span>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" name="barand_fee">
-                        <span class="input-group-text">.00</span>
-                      </div>
-                </div>
-
-
-                <div class="col-md-6">
-                    <label for="staff_number" class="form-label">Average number of staff required</label>
-                    <input type="number" class="form-control" id="staff_number" name="staff_number"> 
-                </div>
-
-                <div class="col-md-6">
-                    <label for="charged_royality " class="form-label">Mention details of Royalty charged or Commission paid</label>
-                    <input type="number" class="form-control" id="charged_royality " name="charged_royality"> 
-                </div>
-
-                <div class="col-md-6">
-                    <label for="brand_fee" class="form-label">Average Monthly Sales per franchisee</label>
-
-                    <div class="input-group col-md-6">           
-                        <span class="input-group-text">AED</span>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" name="barand_fee">
-                        <span class="input-group-text">.00</span>
-                      </div>
-                </div>
-
-                <div class="col-md-12">
-                    <label for="profit_margin   " class="form-label">Average EBITDA / Operating Profit Margin of the franchise</label>
-                    <input type="number" class="form-control" id="profit_margin " name="profit_margin "> 
+                <div class="col-sm-6">
+                    <label for="profit_margin   " class="form-label">Add business and product photos </label>
+                    <input class="form-control" type="file" id="photos" name="photos">
                 </div>
                 
                 <div class="col-sm-6">
-                    <label for="profit_margin   " class="form-label">Add Brand Logo</label>
-                    <input class="form-control" type="file" id="logo" name="logo">
-                </div>
-                
-                <div class="col-sm-6">
-                    <label for="profit_margin   " class="form-label">Add Photos of your Facility / Stores</label>
-                    <input class="form-control" type="file" id="photos">
+                    <label for="profit_margin   " class="form-label">Add business documents</label>
+                    <input class="form-control" type="file" id="documents" name="documents">
                 </div>
                 <div class="col-sm-6">
-                    <label for="profit_margin   " class="form-label">Add Brochures & Documents</label>
-                    <input class="form-control" type="file" id="brochures_documents">
+                    <label for="profit_margin   " class="form-label">Attach proof of business for faster</label>
+                    <input class="form-control" type="file" id="proof">
                 </div>
-                <div class="col-sm-6">
-                    <label for="profit_margin   " class="form-label">Attach Proof of Business</label>
-                    <input class="form-control" type="file" id="proof" name="prrof">
+
+                <div class="col-sm-10 offset-sm-1">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                      I’m interested in receiving quotations from Advisors / Boutique Investment Banks who can manage this transaction. </a> 
+                    </label>
+                    <p>Speedy profile activation within 1 business day</p>
+                    <p>Profile marked as 'Premium Plan' and gets higher visibility</p>
+                    <p>You can send up to 50 business proposals to investors and buyers</p>
+                    <p>Quick email support for your queries</p>
+                    <p>Plan valid for 1 year or deal closure, whichever is earlier</p>
                 </div>
                 
                 <div class="col-sm-10 offset-sm-1">
@@ -260,21 +261,6 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-sm-10 offset-sm-1">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck1">
-                      <label class="form-check-label" for="gridCheck1">
-                        Premium Plan <a href="">Know More</a> 
-                        <br>
-                        <p>Speedy profile activation within 1 business day</p>
-                        <p>Profile marked as 'Premium' and gets higher visibility</p>
-                        <p>You can send up to 50 business proposals to investors and buyers</p>
-                        <p>Quick email support for your queries</p>
-                        <p>Plan valid for 1 year or deal closure, whichever is earlier</p>
-                    </label>
-                    </div>
-                  </div>
-
 
                   <div class="col-sm-10 offset-sm-1">
                     <div class="form-check">
@@ -319,7 +305,7 @@
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="gridCheck1">
                       <label class="form-check-label" for="gridCheck1">
-                        I accept 1% finder's fee (payable post transaction) and other terms of engagement <a href="">Know More</a> 
+                        I accept 1% finder's fee (payable post transaction) and othe <a href="">terms of engagement </a> 
                       </label>
                   </div>
 
