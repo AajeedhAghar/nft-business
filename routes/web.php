@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InvestorController;
 use App\Http\Controllers\FranchiseController ;
+use App\Http\Controllers\BusinessController;
 
  
 
@@ -29,9 +30,18 @@ Route::post('/franchise/store', [FranchiseController::class, 'store'])->name('fr
 // Route::resource('franchise', FranchiseController::class);
 // Route::resource('investors', 'InvestorController');
 
+Route::post('/post_invsestors', [InvestorController::class, 'create'])->name('create.investor');
+// Route::post('/post_invsestors', function () {
+
+//     // return view('investors');
+// });
+
 Route::get('/list', function () {
-    return View::make('list');
-}); 
+    return view('listing');
+});
+Route::get('/franchise', function () {
+    return view('franchise');
+});
 
 
 
@@ -48,11 +58,16 @@ Route::get('/business', function () {
 Route::get('/business', function () {
     return view('business');
 });
+Route::post('/post_business', [BusinessController::class, 'create'])->name('create.business');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
 
 
-// Route::resource('busninesses', BusinessController::class);
-// Route::resource('franchises', FranchiseController::class);
-// Route::resource('investors', InvestorController::class);
-// Route::resource('formats', FormatController::class);
-
- 
+Route::resource('busninesses', BusinessController::class);
+Route::resource('franchises', FranchiseController::class);
+Route::resource('investors', InvestorController::class);
+Route::resource('formats', FormatController::class);

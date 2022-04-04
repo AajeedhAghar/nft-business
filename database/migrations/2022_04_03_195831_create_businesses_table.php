@@ -12,6 +12,9 @@ return new class extends Migration
         Schema::create('businesses', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name')->nullable();
+            $table->string('company_name')->nullable();
+            $table->integer('country_code')->nullable();
+            $table->integer('phone')->nullable();
             $table->string('email')->nullable();
             $table->string('role')->nullable();
             $table->text('interest')->nullable();
@@ -28,11 +31,11 @@ return new class extends Migration
             $table->integer('year_sales')->nullable();
             $table->integer('EBITDA')->nullable();
             $table->text('assets')->nullable();
-            $table->text('Phisycal_assets _value')->nullable();
+            $table->text('Phisycal_assets_value')->nullable();
             $table->text('photo')->nullable();
             $table->text('document')->nullable();
             $table->text('proof')->nullable();
-            $table->boolean('receiving_quotations')->nullable();
+            $table->integer('receiving_quotations')->nullable();
             $table->string('plan')->nullable();
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
