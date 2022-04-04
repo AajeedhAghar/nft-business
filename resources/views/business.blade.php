@@ -81,31 +81,70 @@
             <div class="card-body">
               <h5 class="card-title">Business Information</h5>
               <form class="row g-3">
-                <div class="col-md-12">
-                  <label for="brand_name " class="form-label">You are a(n)</label>
-                  <input type="text" class="form-control" id="brand_name" name="brand_name">
+
+                <div class="row mb-3">
+                  <label class="col-sm-2 col-form-label">You are a(n)</label>
+                  <div class="col-sm-10">
+                    <select class="form-select" aria-label="Default select example">
+                      <option value="1">Business Owner/ Director</option>
+                      <option value="2">Management Member</option>
+                      <option value="3">Advisor/ Business Broker</option>
+                    </select>
+                  </div>
                 </div>
 
-                <div class="col-md-12">
-                    <label for="website" class="form-label">You are interested in</label>
-                    <input type="text" class="form-control" id="website" name="website">
+                <div class="row mb-3">
+                  <label class="col-sm-3 col-form-label">You are interested in</label>
+                  <div class="col-sm-9">
+                    <select class="form-select" aria-label="Default select example">
+                      <option value="1">Full sale of business</option>
+                      <option value="2">Partial stake sale of business/invest</option>
+                      <option value="3">Loan for business</option>
+                      <option value="3">Selling or Leasing out Business Assets</option>
+                    </select>
                   </div>
-                <div class="col-md-12">
-                    <label for="industry " class="form-label">When was the business established?</label>
-                    <input type="date" class="form-control" id="industry " name="industry "> 
                 </div>
-                <div class="col-md-12">
+
+
+                <div class="col-md-4">
                   <label for="industry " class="form-label">When was the business established?</label>
-                  <input type="text" class="form-control" id="industry " name="industry "> 
+                  <input type="date" class="form-control" id="industry " name="industry "> 
               </div>
 
-              <div class="col-md-12">
-                <label for="industry " class="form-label">Where is the business located / headquartered?</label>
-                <input type="text" class="form-control" id="industry " name="industry "> 
+            
+                <div class="row mb-3">
+                  <label class="col-sm-3 col-form-label">Select business' industry</label>
+                  <div class="col-sm-8">
+                    <select class="form-select" aria-label="Default select example">
+                      <option value="1">Energey</option>
+                      <option value="2">Industrial</option>
+                      <option value="3">Finance</option>
+                      <option value="3">Healthcare</option>
+                      <option value="1">Technology</option>
+                      <option value="2">Building, Construction Maintenance</option>
+                      <option value="3">Food & Beverage</option>
+                      <option value="3">Retail Shops</option>
+                      <option value="1">Education </option>
+                      <option value="2">Logistics</option>
+                      <option value="3">Media </option>
+                      <option value="3">Travel & Leisure</option>
+                      <option value="1">Business Services </option>
+                      <option value="2">Electronic Equipment</option>
+                      <option value="3">Coal </option>
+                      <option value="3">Integrated oil and Gas</option>
+                    </select>
+                  </div>
+                </div>
+
+              <div class="col-md-6">
+                <label for="location " class="form-label">Where is the business located / headquartered?</label>
+                <input type="text" class="form-control" id="location " name="location "> 
             </div>
+
+
             <div class="col-md-12">
-              <label for="industry " class="form-label">Select business legal entity type</label>
-              <input type="text" class="form-control" id="industry " name="industry "> 
+              <label for="industry " class="form-label">How many permanent employees does the business have?</label>
+              <input type="number" class="form-control" id="industry " name="industry "> 
           </div>
 
             
