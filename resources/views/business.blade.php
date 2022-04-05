@@ -24,18 +24,10 @@
    <link href="{{asset('vendor/remixicon/remixicon.css')}}" rel="stylesheet">
    <link href="{{asset('vendor/simple-datatables/style.css')}}" rel="stylesheet">
  
-   <!-- Template Main CSS File -->
    <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: NiceAdmin - v2.2.2
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -240,6 +232,10 @@
                     <input class="form-control" type="file" id="proof">
                 </div>
 
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                  On a basic profile, you will be able to connect with 2 businesses for free. To connect with more select a plan below:
+                </div>
+                 
                 <div class="col-sm-10 offset-sm-1">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck1">
@@ -311,8 +307,10 @@
 
 
 
-                <div class="text-center">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <div class="row mb-3">
+                        
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  
                 </div>
               </form>
             </div>

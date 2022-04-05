@@ -267,6 +267,10 @@
                     <input class="form-control" type="file" id="proof" name="prrof">
                 </div>
                 
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                  On a basic profile, you will be able to connect with 2 businesses for free. To connect with more select a plan below:
+                </div>
+
                 <div class="col-sm-10 offset-sm-1">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="gridCheck1">
@@ -337,15 +341,12 @@
                         I accept 1% finder's fee (payable post transaction) and other terms of engagement <a href="">Know More</a> 
                       </label>
                   </div>
-
-                <div class="text-right">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
+                  <div class="row mb-3">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
               </form>
             </div>
           </div>
-
-
         </div>
       </div>
     </section>
