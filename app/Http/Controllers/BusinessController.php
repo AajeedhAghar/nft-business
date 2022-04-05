@@ -15,26 +15,10 @@ class BusinessController extends Controller
         return view('businesses.index', compact('businesses'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create(Request $request)
     {
 
-        // $this->validate($request, [
-        //     'name' => 'required',
-        //     'email' => 'required|email',
-        //     'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
-        //     'subject'=>'required',
-        //     'message' => 'required'
-        //  ]);
-        // //  Store data in database
-
-        // echo "<pre>";
-        // print_r($request->all());
-        // die();
+      
 
         $plan = implode(',',$request->post('plan'));
         $request->request->set('plan', $plan);

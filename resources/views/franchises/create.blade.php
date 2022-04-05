@@ -62,7 +62,7 @@
                   <label for="name" class="form-label">Authorized Person Name</label>
                   <input type="text" class="form-control" id="name" name="name">
                 </div>
-                <input hidden="hidden"   name="user_id" id="user_id" value="1" type="text">
+                <!-- <input hidden="hidden"   name="user_id" id="user_id" value="1" type="text"> -->
 
 
 

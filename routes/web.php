@@ -24,17 +24,19 @@ Route::post('/investors/store', [InvestorController::class, 'store'])->name('/in
  
 
 Route::get('/franchise/create', [FranchiseController::class, 'create'])  ;
-Route::post('/franchise/store', [FranchiseController::class, 'store'])->name('franchise.store');
+Route::post('/franchise/store', [FranchiseController::class, 'store'])->name('franchise/store');
 
 
-// Route::resource('franchise', FranchiseController::class);
-// Route::resource('investors', 'InvestorController');
 
 Route::post('/post_invsestors', [InvestorController::class, 'create'])->name('create.investor');
 // Route::post('/post_invsestors', function () {
 
 //     // return view('investors');
 // });
+
+
+// Route::resource('franchise', FranchiseController::class);
+// Route::resource('investors', 'InvestorController');
 
 Route::get('/list', function () {
     return view('listing');
