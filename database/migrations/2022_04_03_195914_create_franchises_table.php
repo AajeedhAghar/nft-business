@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('franchises', function (Blueprint $table) {
 
-            $table->id();
+            $table->bigIncrements('id');
             $table->string('name')->nullable();
             $table->string('email')->nullable();
             $table->integer('country_code')->nullable();
-            $table->integer('phone')->nullable();
+            $table->text('phone')->nullable();
             $table->string('designation')->nullable();
             $table->string('brand_name')->nullable();
             $table->string('website')->nullable();

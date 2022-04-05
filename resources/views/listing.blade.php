@@ -10,11 +10,9 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
 
   <!-- Vendor CSS Files -->
   <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -34,19 +32,16 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
 </head>
-
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">NFT Dubai</span>
       </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
 
     <div class="search-bar">
@@ -57,360 +52,258 @@
     </div><!-- End Search Bar -->
 
     <nav class="header-nav ms-auto">
-      <ul class="d-flex align-items-center">
 
-        <li class="nav-item d-block d-lg-none">
-          <a class="nav-link nav-icon search-bar-toggle " href="#">
-            <i class="bi bi-search"></i>
-          </a>
-        </li><!-- End Search Icon-->
+            <a class="nav-link nav-profile d-flex align-items-center " href="#" data-bs-toggle="dropdown">
+                <span class="d-none d-md-block dropdown-toggle ps-2">AbuBakr</span>
+            </a><!-- End Profile Iamge Icon -->
 
-        <!-- <li class="nav-item dropdown">
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                <li class="dropdown-header">
+                    <h6>AbuBakr Ali</h6>
+                    <span>abubakr.ali5001@gmail.com</span>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
 
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-bell"></i>
-            <span class="badge bg-primary badge-number">4</span>
-          </a> 
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                        <i class="bi bi-person"></i>
+                        <span>My Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
 
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
-            <li class="dropdown-header">
-              You have 4 new notifications
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                        <i class=" ri-bill-line"></i>
+                        <span>Invoices</span>
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
 
-            <li class="notification-item">
-              <i class="bi bi-exclamation-circle text-warning"></i>
-              <div>
-                <h4>Lorem Ipsum</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>30 min. ago</p>
-              </div>
-            </li>
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                        <i class=" ri-bookmark-line"></i>
+                        <span>Bookmark</span>
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                        <i class=" ri-inbox-line"></i>
+                        <span>Inbox</span>
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                        <i class=" ri-notification-2-fill"></i>
+                        <span>Notifications</span>
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                        <i class=" ri-settings-3-line"></i>
+                        <span>Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <i class="bi power"></i>
+                        <span>Sign Out</span>
+                    </a>
+                </li>
 
-            <li>
-              <hr class="dropdown-divider">
-            </li>
+            </ul><!-- End Profile Dropdown Items -->
 
-            <li class="notification-item">
-              <i class="bi bi-x-circle text-danger"></i>
-              <div>
-                <h4>Atque rerum nesciunt</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>1 hr. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-check-circle text-success"></i>
-              <div>
-                <h4>Sit rerum fuga</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>2 hrs. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-info-circle text-primary"></i>
-              <div>
-                <h4>Dicta reprehenderit</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
-                <p>4 hrs. ago</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li class="dropdown-footer">
-              <a href="#">Show all notifications</a>
-            </li>
-
-          </ul>
-
-        </li>
-
-        <li class="nav-item dropdown">
-
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-chat-left-text"></i>
-            <span class="badge bg-success badge-number">3</span>
-          </a> 
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
-            <li class="dropdown-header">
-              You have 3 new messages
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="message-item">
-              <a href="#">
-                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
-                <div>
-                  <h4>Maria Hudson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                  <p>4 hrs. ago</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="message-item">
-              <a href="#">
-                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
-                <div>
-                  <h4>Anna Nelson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                  <p>6 hrs. ago</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="message-item">
-              <a href="#">
-                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
-                <div>
-                  <h4>David Muldon</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                  <p>8 hrs. ago</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="dropdown-footer">
-              <a href="#">Show all messages</a>
-            </li>
-
-          </ul>
-
-        </li> --> <!-- End Messages Nav -->
-        
-        <li class="nav-item dropdown pe-3">
-
-          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
-          </a><!-- End Profile Iamge Icon -->
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-            <li class="dropdown-header">
-              <h6>Kevin Anderson</h6>
-              <span>Web Designer</span>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-person"></i>
-                <span>My Profile</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-gear"></i>
-                <span>Account Settings</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-                <i class="bi bi-question-circle"></i>
-                <span>Need Help?</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
-                <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
-              </a>
-            </li>
-
-          </ul><!-- End Profile Dropdown Items -->
-        </li><!-- End Profile Nav -->
-
-      </ul>
     </nav><!-- End Icons Navigation -->
 
   </header><!-- End Header -->
 
-  <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
-
-    <ul class="sidebar-nav" id="sidebar-nav">
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
-          <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link " data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="components-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="components-alerts.html">
-              <i class="bi bi-circle"></i><span>Alerts</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-accordion.html">
-              <i class="bi bi-circle"></i><span>Accordion</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-badges.html">
-              <i class="bi bi-circle"></i><span>Badges</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-breadcrumbs.html">
-              <i class="bi bi-circle"></i><span>Breadcrumbs</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-buttons.html">
-              <i class="bi bi-circle"></i><span>Buttons</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-cards.html" class="active">
-              <i class="bi bi-circle"></i><span>Cards</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-carousel.html">
-              <i class="bi bi-circle"></i><span>Carousel</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-list-group.html">
-              <i class="bi bi-circle"></i><span>List group</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-modal.html">
-              <i class="bi bi-circle"></i><span>Modal</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-tabs.html">
-              <i class="bi bi-circle"></i><span>Tabs</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-pagination.html">
-              <i class="bi bi-circle"></i><span>Pagination</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-progress.html">
-              <i class="bi bi-circle"></i><span>Progress</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-spinners.html">
-              <i class="bi bi-circle"></i><span>Spinners</span>
-            </a>
-          </li>
-          <li>
-            <a href="components-tooltips.html">
-              <i class="bi bi-circle"></i><span>Tooltips</span>
-            </a>
-          </li>
-        </ul>
-      </li>
-
-
-
-    
-    </ul>
-
-  </aside><!-- End Sidebar-->
-
+  <div class="filter"> <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter" aria-expanded="false" aria-controls="mobile-filter">Filters<span class="fa fa-filter pl-1"></span></button>
+  </div>
   <main id="main" class="main">
-
-    <div class="pagetitle">
-      <h1>Cards</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Components</li>
-          <li class="breadcrumb-item active">Cards</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
-
-    <section class="section">
-      <div class="row align-items-top">
-        <div class="col-lg-6">
-
-        <div class="col-lg-3">
-
-          <!-- Card with an image on top -->
-          <div class="card">
-            <img src="assets/img/card.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card with an image on top</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="filter"> <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter" aria-expanded="false" aria-controls="mobile-filter">Filters<span class="fa fa-filter pl-1"></span></button>
             </div>
-          </div><!-- End Card with an image on top -->
+            <div id="mobile-filter">
+                <div>
+                    <h6 class="p-1 border-bottom">Transaction Types</h6>
+                    <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                All Transactions
+                            </label>
+                    </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Businesses For Sale
+                            </label>
+                        </div>
+                            <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Investment Opportunities
+                            </label>
+                            </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Business Loan
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Assets for sale
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Franchise Opportunities
+                            </label>
+                        </div>
 
-          <!-- Card with an image on bottom -->
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card with an image on bottom</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <div>
+                    <h6 class="p-1 border-bottom">Investment Range</h6>
+                    <div>
+                        <label for="customRange1" class="form-label">Range of</label>
+                        <input type="range" class="form-range" id="customRange1">
+                    </div>
+                </div>
+                <div>
+                    <h6 class="p-1 border-bottom">Run Rate Sales</h6>
+                    <div>
+                        <label for="customRange1" class="form-label">Rate of</label>
+                        <input type="range" class="form-range" id="customRange1">
+                    </div>
+                </div>
+                <div>
+                    <h6 class="p-1 border-bottom">EBITDA</h6>
+                    <div>
+                        <label for="customRange1" class="form-label">Rate of</label>
+                        <input type="range" class="form-range" id="customRange1">
+                    </div>
+                </div>
+                <div>
+                    <h6 class="p-1 border-bottom">EBITDA Margin</h6>
+                    <div>
+                        <label for="customRange1" class="form-label">Rate of</label>
+                        <input type="range" class="form-range" id="customRange1">
+                    </div>
+                </div>
+                <div>
+                    <h6 class="p-1 border-bottom">Year Established</h6>
+                    <div>
+                        <label for="customRange1" class="form-label">Year of</label>
+                        <input type="range" class="form-range" id="customRange1">
+                    </div>
+                </div>
+                <div>
+                    <h6 class="p-1 border-bottom">Listed By</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Business Owner
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Management
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Advisor
+                        </label>
+                    </div>
+                </div>
+
             </div>
-            <img src="assets/img/card.jpg" class="card-img-bottom" alt="...">
-          </div><!-- End Card with an image on bottom -->
 
         </div>
+        <div class="col-md-9">
+            <div class="pagetitle">
+              <h1>Business For Sale</h1>
 
-        
+            </div><!-- End Page Title -->
 
+            <section class="section">
+      <div class="row align-items-top">
+        <div class="col-lg-12">
+        <div class="col-lg-4">
+
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <p>Newly Established Restaurant Investment Opportunity </p>
+                    <div class="row">
+                        <div class="col-sm-3"><i class="bx bx-mail-send"></i></div>
+                        <div class="col-sm-3"><i class="bx bx-phone-call"></i></div>
+                        <div class="col-sm-3"><i class=" bxl-linkedin-square"></i></div>
+                        <div class="col-sm-3"><i class=" bxl-google-plus-circle"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Restaurant that will serve traditional Turkish food and has a total seating capacity of 150.</h5>
+              <div class="row">
+                  <div class="col-lg-8">
+              Restaurant that intends to offer traditional Turkish food with some international kitchen, and shisha.
+                    <div class="row">
+                        <div class="col-6"><i class="bx-star"></i> 8.02</div>
+                        <div class="col-6"><i class=" bxs-location-plus"></i> Dubai</div>
+                    </div>
+                 </div>
+                 <div class="col-lg-4">
+                 <img src="{{asset('img/b1.jpg')}}" class="card-img-top" alt="...">
+                 </div>
+                 </div>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                        <div class="col-8">
+                            <small>AED 800 K - 1M</small>
+                            <small>Financial Investment</small>
+
+                        </div>
+                        <div class="col-4">
+                        <div >
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        </div>
+                </div>
+            </div>
+          </div><!-- End Card with header and footer -->
+        </div>
+      </div>
       </div>
     </section>
-
+        </div>
+    </div>
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="copyright">
       &copy; Copyright <strong><span>NFT Dubai</span></strong>. All Rights Reserved
@@ -426,6 +319,7 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+
    <!-- Vendor JS Files -->
    <script src="{{asset('vendor/apexcharts/apexcharts.min.js')}}"></script>
   <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -438,6 +332,7 @@
 
   <!-- Template Main JS File -->
   <script src="{{asset('js/main.js')}}"></script>
+
 </body>
 
 </html>
