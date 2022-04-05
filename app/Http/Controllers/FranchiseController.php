@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Franchise;
 use App\Models\Format;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 class FranchiseController extends Controller
@@ -38,7 +38,7 @@ class FranchiseController extends Controller
         $franchise->name = $request->name;
         $franchise->email = $request->email;
         $franchise->country_code = $request->country_code;
-        $franchise->user_id =   auth::user()->id;
+        $franchise->user_id =  auth::user()->id;
         $franchise->phone = $request->phone;
         $franchise->designation = $request->designation;
         $franchise->brand_name = $request->brand_name;
