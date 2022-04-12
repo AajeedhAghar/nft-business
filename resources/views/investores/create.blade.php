@@ -70,7 +70,7 @@
                       <input type="email" name="email" placeholder="Enter your email address" class="form-control" id="inputEmail5">
                     </div>
                     <div class="col-md-3">
-                        <label for="inputPassword5" class="form-label">Country</label>
+                        <label for="inputPassword5" class="form-label">Country Code</label>
                         <input type="number" name="country_code" class="form-control" id="inputPassword5">
                     </div>
                     <div class="col-md-9">

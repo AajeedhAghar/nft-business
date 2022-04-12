@@ -24,7 +24,14 @@ Route::post('/investors/store', [InvestorController::class, 'store'])->name('/in
  
 
 Route::get('/franchise/create', [FranchiseController::class, 'create'])  ;
-Route::post('/franchise/store', [FranchiseController::class, 'store'])->name('franchise/store');
+Route::post('/franchise/store', [FranchiseController::class, 'store'])->name('franchise.store');
+
+/******************* franchise ********************/
+ 
+
+Route::get('/business/create', [BusinessController::class, 'create'])  ;
+Route::post('/business/store', [BusinessController::class, 'store'])->name('business/store');
+
 
 
 
@@ -48,12 +55,12 @@ Route::get('/franchise', function () {
 
 
 Route::get('/franchise', function () {
-    return View::make('franchise');
+    return view('franchise');
 }); 
 
 
 Route::get('/business', function () {
-    return View::make('business');
+    return view('business.create');
 }); 
 
  

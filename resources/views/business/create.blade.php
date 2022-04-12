@@ -39,13 +39,12 @@
     </div><!-- End Page Title -->
     <section class="section">
       <div class="row">
-
       <form class="row g-3" method="post" action="{{ route('create.business') }}">
-                  @csrf
-
+          @csrf
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Your Name</h5>
+              <h5 class="card-title">Confidential Information</h5>
+
                 <div class="col-md-6">
                   <label for="name" class="form-label">Authorized Person Name</label>
                   <input type="text" class="form-control" id="name" name="name">
@@ -54,25 +53,26 @@
                 <div class="col-md-6">
                     <label for="company_name" class="form-label">Company Name</label>
                     <input type="text" class="form-control" id="company_name" name="company_name">
-                  </div>
+                </div>
 
-                  <div class="col-md-6">
-                    <label for="country_code" class="form-label">Country Code</label>
-                    <input type="number" class="form-control" id="country_code" name="country_code"> 
+                s
+                <div class="col-md-2">
+                  <label for="country_code" class="form-label">Country code</label>
+                  <input type="number" name="country_code" class="form-control" id="country_code">
+                  
                 </div>
-                <div class="col-md-6">
-                    <label for="phone" class="form-label">Mobile Number</label>
-                    <input type="number" class="form-control" id="phone" name="phone "> 
+
+                <div class="col-md-9">
+                  <label for="inputPassword5" class="form-label">Phone Number</label>
+                  <input type="number" name="country_code" class="form-control" id="country_code">
                 </div>
+              
                 <div class="col-md-6">
                   <label for="email" class="form-label">Enter official email for quick verification</label>
                   <input type="text" class="form-control" id="email" name="email">
                 </div>
-            
-                
-            </div>
+            </div>   
           </div>
-
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Business Information</h5>
@@ -338,7 +338,6 @@
     </div>
   </footer><!-- End Footer -->
 
- 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
  <!-- Vendor JS Files -->

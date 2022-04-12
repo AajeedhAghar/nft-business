@@ -48,8 +48,6 @@
     </div><!-- End Page Title -->
     <section class="section">
       <div class="row">
-
-
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Confidential Information</h5>
@@ -57,42 +55,36 @@
               
               @csrf
 
-          <div class="form-group">
+              <div class="form-group">
                 <div class="col-md-6">
                   <label for="name" class="form-label">Authorized Person Name</label>
                   <input type="text" class="form-control" id="name" name="name">
                 </div>
                 <!-- <input hidden="hidden"   name="user_id" id="user_id" value="1" type="text"> -->
-
-
-
-
-        
- 
- 
                 <div class="col-md-6">
                     <label for="email" class="form-label">Enter official email for quick verification</label>
                     <input type="text" class="form-control" id="email" name="email">
                   </div>
-
-                <div class="col-md-6">
-                    <label for="phone " class="form-label">Mobile Number</label>
-                    <input type="number" class="form-control" id="phone " name="phone "> 
+                  <div class="col-md-3">
+                    <label for="inputPassword5" class="form-label">Country</label>
+                    <input type="number" name="country_code" class="form-control" id="inputPassword5">
+                </div>
+                <div class="col-md-9">
+                    <label for="inputPassword5" class="form-label">Phone Number</label>
+                    <input type="number" name="phone_number" placeholder="Enter your phone number" class="form-control" id="inputPassword5">
                 </div>
                 <div class="col-md-6">
                   <label for="designation" class="form-label">Your Designation</label>
                   <input type="text" class="form-control" id="designation" name="designation">
                 </div>
-            
-                
-            </div>
           </div>
-
+        </div>
+      </div>
+      
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Brand Details</h5>
 
-            
               <div class="row g-3">
                 <div class="col-md-12">
                   <label for="brand_name " class="form-label">Brand Name</label>
@@ -350,18 +342,10 @@
                       <label class="form-check-label" for="gridCheck1">
                         I accept 1% finder's fee (payable post transaction) and other terms of engagement <a href="">Know More</a> 
                       </label>
-<<<<<<< HEAD:resources/views/franchise.blade.php
                   </div>
                   <div class="row mb-3">
                       <button type="submit" class="btn btn-primary">Submit</button>
                   </div>
-=======
-                  </div> -->
-
-                <div class="text-right">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
->>>>>>> 2e42f4623a74cb2bccfda4afafd70342016371d7:resources/views/franchises/create.blade.php
               </form>
             </div>
           </div>
